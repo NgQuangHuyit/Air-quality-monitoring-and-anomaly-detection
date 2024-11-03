@@ -12,7 +12,7 @@ loaded_model = joblib.load('model/isolation_forest_model.joblib')
 
 
 
-IoTHubConnectionString = "HostName=airqualityhub.azure-devices.net;SharedAccessKeyName=service;SharedAccessKey=BRbMRBNvyBTXgtI+I/LLGf9rnhlL+WhJ7AIoTO9CrfM="
+IoTHubConnectionString = ""
 registry_manager = IoTHubRegistryManager.from_connection_string(IoTHubConnectionString)
 
 # CREDENTIALS INFORMATION
@@ -21,6 +21,7 @@ EVENTHUB_COMPATIBLE_ENDPOINT = ""
 EVENTHUB_COMPATIBLE_PATH = ""
 IOTHUB_SAS_KEY = ""
 CONNECTION_STR = ""
+
 
 db_client = CassandraClient(
         cluster=["localhost"],
